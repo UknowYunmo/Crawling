@@ -27,7 +27,7 @@ print(text)
 f.write(str(text)+'\n')
 browser.find_element_by_class_name('btn_detail_option').click() # 상세 조건 버튼
 browser.find_element_by_class_name('btn_open_layer').click() # 경력 버튼
-html = browser.page_source
+html = browser.page_source 
 soup = BeautifulSoup(html, "lxml")
 browser.find_element_by_xpath('//*[@id="sp_main_wrapper"]/div[1]/div[1]/div/div[1]/div[1]/label').click() # 신입
 browser.find_element_by_xpath('//*[@id="sp_main_wrapper"]/div[1]/div[1]/div/div[1]/div[2]/label').click() # 경력
