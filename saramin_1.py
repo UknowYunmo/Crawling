@@ -17,7 +17,7 @@ print(text)
 f.write(text)
 browser.find_element_by_class_name('btn_detail_option').click()
 browser.find_element_by_class_name('btn_open_layer').click()
-html = browser.page_source
+html = browser.page_source 
 soup = BeautifulSoup(html, "lxml")
 #browser.find_element_by_class_name('lbl').click()
 browser.find_element_by_xpath('//*[@id="sp_main_wrapper"]/div[1]/div[1]/div/div[1]/div[1]/label').click()
